@@ -1,6 +1,6 @@
 # Calendrier PWA - Alsatia Unitas Schiltigheim 3 (Saison 2025-2026)
 
-[![Statut du Déploiement Netlify](https://api.netlify.com/api/v1/badges/VOTRE_API_ID_NETLIFY/deploy-status)](https://app.netlify.com/sites/calendrier-asuschilti3v2-2025/deploys)
+[![Statut du Déploiement Netlify](https://api.netlify.com/api/v1/badges/VOTRE_API_ID_NETLIFY/deploy-status)](https://app.netlify.com/sites/calendrier-asuschilti3-2025/deploys)
 
 Cette Progressive Web App (PWA) a été conçue pour afficher et consulter facilement le calendrier des matchs de l'équipe de tennis de table **Alsatia Unitas Schiltigheim 3** pour la saison 2025-2026.
 
@@ -99,6 +99,10 @@ Le site est déployé automatiquement par Netlify. Chaque `git push` sur la bran
 La configuration du build se trouve dans le fichier `netlify.toml` et dans les paramètres du site sur Netlify :
 *   **Base directory :** `Calendrier PWA`
 *   **Build command :** (vide)
+*   **Publish directory :** (vide)
+
+---
+*Note : Pour trouver votre `VOTRE_API_ID_NETLIFY` pour le badge, allez dans `Site settings > General > Site details > API ID` sur votre tableau de bord Netlify.*
 *   **Publish directory :** (vide)
 
 ---
