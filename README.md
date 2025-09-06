@@ -4,7 +4,7 @@
 
 Cette Progressive Web App (PWA) a été conçue pour afficher et consulter facilement le calendrier des matchs de l'équipe de tennis de table **Alsatia Unitas Schiltigheim 3** pour la saison 2025-2026.
 
-Le site est accessible à l'adresse : **[https://calendrier-asuschilti3v2-2025.netlify.app/](https://calendrier-asuschilti3v2-2025.netlify.app/)**
+Le site est accessible à l'adresse : **[https://calendrier-asuschilti3-2025.netlify.app/](https://calendrier-asuschilti3-2025.netlify.app/)**
 
 ---
 
