@@ -22,11 +22,34 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏓</text></svg>">
     
     <style>
-        /* --- CSS (inchangé) --- */
+        /* --- VOTRE CSS ORIGINAL (INCHANGÉ) --- */
         :root{--bg-gradient-start:#667eea;--bg-gradient-end:#764ba2;--header-gradient-start:#1e3c72;--header-gradient-end:#2a5298;--card-bg:rgba(255,255,255,.95);--text-primary:#2a5298;--text-secondary:#666;--border-color:#eee;--info-bg:#f8f9fa;--warning-bg:#fff3cd;--warning-border:#ffeaa7;--warning-text:#856404;--footer-bg:#2c3e50;--shadow:0 5px 15px rgba(0,0,0,.08);--shadow-hover:0 10px 25px rgba(0,0,0,.15);--success-bg:#d4edda;--success-border:#c3e6cb;--success-text:#155724}[data-theme=dark]{--bg-gradient-start:#1a1a2e;--bg-gradient-end:#16213e;--header-gradient-start:#0f0f23;--header-gradient-end:#1a1a2e;--card-bg:rgba(30,30,46,.95);--text-primary:#64b5f6;--text-secondary:#b0b0b0;--border-color:#444;--info-bg:#2a2a3e;--warning-bg:#3a3a1e;--warning-border:#5a5a2e;--warning-text:#e6d56c;--footer-bg:#1a1a2e;--shadow:0 5px 15px rgba(0,0,0,.3);--shadow-hover:0 10px 25px rgba(0,0,0,.4);--success-bg:#1e3a2e;--success-border:#2e4a3e;--success-text:#4caf50}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;line-height:1.6;background:linear-gradient(135deg,var(--bg-gradient-start) 0,var(--bg-gradient-end) 100%);min-height:100vh;padding:20px;transition:background-color .3s ease,color .3s ease;color:var(--text-secondary)}.container{max-width:1200px;margin:0 auto;background:var(--card-bg);border-radius:20px;box-shadow:var(--shadow-hover);overflow:hidden;transition:background-color .3s ease}.header{background:linear-gradient(135deg,var(--header-gradient-start) 0,var(--header-gradient-end) 100%);color:#fff;padding:2rem;text-align:center;position:relative;overflow:hidden}.header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;animation:float 20s linear infinite}@keyframes float{0%{transform:translateX(0) translateY(0)}100%{transform:translateX(-50px) translateY(-50px)}}.header-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;position:relative;z-index:1}.header-controls{display:flex;gap:1rem;align-items:center}.theme-toggle,.install-btn,.help-btn{background:rgba(255,255,255,.2);border:2px solid rgba(255,255,255,.3);border-radius:50px;padding:.5rem 1rem;color:#fff;cursor:pointer;display:flex;align-items:center;gap:.5rem;transition:all .3s ease;font-size:.9rem;text-decoration:none}.theme-toggle:hover,.install-btn:hover,.help-btn:hover{background:rgba(255,255,255,.3);transform:scale(1.05)}.install-btn.hidden{display:none}.header h1{font-size:clamp(1.5rem, 4vw, 2.5rem);margin-bottom:.5rem;position:relative;z-index:1}.header .subtitle{font-size:clamp(.9rem, 2vw, 1.2rem);opacity:.9;position:relative;z-index:1}.pwa-status{background:var(--success-bg);border:1px solid var(--success-border);color:var(--success-text);padding:1rem 1.5rem;margin:1rem 2rem;border-radius:10px;text-align:center;display:flex;align-items:center;justify-content:center;gap:.5rem;font-weight:600}.pwa-status.hidden{display:none}.controls{padding:2rem;background:var(--info-bg);display:flex;flex-direction:column;gap:1.5rem}.search-bar{position:relative;width:100%;max-width:400px;margin:0 auto}.search-input{width:100%;padding:1rem 1rem 1rem 3rem;border:2px solid var(--border-color);border-radius:25px;background:var(--card-bg);color:var(--text-secondary);font-size:1rem;transition:all .3s ease}.search-input:focus{outline:0;border-color:var(--text-primary);box-shadow:0 0 20px rgba(42,82,152,.2)}.search-icon{position:absolute;left:1rem;top:50%;transform:translateY(-50%);color:var(--text-secondary);font-size:1.2rem}.filters{display:flex;justify-content:center;flex-wrap:wrap;gap:1rem}.filter-btn{padding:.75rem 1.5rem;border:2px solid var(--text-primary);background:0 0;color:var(--text-primary);border-radius:25px;cursor:pointer;transition:all .3s ease;font-size:.9rem;font-weight:600;position:relative;overflow:hidden}.filter-btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:var(--text-primary);transition:left .3s ease;z-index:-1}.filter-btn:hover::before,.filter-btn.active::before{left:0}.filter-btn:hover,.filter-btn.active{color:#fff;transform:translateY(-2px);box-shadow:var(--shadow)}.info-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;padding:2rem;background:var(--info-bg)}.info-card{background:var(--card-bg);padding:1.5rem;border-radius:15px;box-shadow:var(--shadow);transition:transform .3s ease,box-shadow .3s ease;border:1px solid var(--border-color)}.info-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover)}.info-card h3{color:var(--text-primary);margin-bottom:.5rem;font-size:1.1rem}.info-card p{color:var(--text-secondary);font-size:.95rem}.matches-section{padding:2rem}.section-title{text-align:center;margin-bottom:2rem;color:var(--text-primary);font-size:clamp(1.5rem, 3vw, 2rem);position:relative}.section-title::after{content:'';position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);width:50px;height:3px;background:linear-gradient(to right,var(--bg-gradient-start),var(--bg-gradient-end));border-radius:3px}.results-info{text-align:center;color:var(--text-secondary);margin-bottom:1rem;font-style:italic}.no-results{text-align:center;color:var(--text-secondary);font-size:1.1rem;padding:2rem;background:var(--card-bg);border-radius:15px;border:2px dashed var(--border-color)}.matches-grid{display:grid;gap:1.5rem;margin-top:2rem}.match-card{background:var(--card-bg);border-radius:15px;box-shadow:var(--shadow);overflow:hidden;transition:transform .3s ease,box-shadow .3s ease,opacity .5s ease;border:1px solid var(--border-color);position:relative;opacity:0;transform:translateY(20px)}.match-card.visible{opacity:1;transform:translateY(0)}.match-card.upcoming{border-left:5px solid #4caf50}.match-card.upcoming::before{content:'⏰ Prochain match';position:absolute;top:-1px;right:-1px;background:#4caf50;color:#fff;padding:.25rem .75rem;border-radius:0 15px 0 15px;font-size:.8rem;font-weight:700}.match-header{background:linear-gradient(135deg,var(--header-gradient-start) 0,var(--header-gradient-end) 100%);color:#fff;padding:1rem 1.5rem;font-weight:700;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}.match-body{padding:1.5rem}.match-teams{display:flex;align-items:center;justify-content:center;margin-bottom:1rem;flex-wrap:wrap;gap:1rem}.team{padding:.75rem 1.25rem;border-radius:25px;font-weight:700;text-align:center;flex:1;min-width:200px;transition:transform .2s ease}.team:hover{transform:scale(1.02)}.team.home{background:linear-gradient(135deg,#4facfe 0,#00f2fe 100%);color:#fff}.team.away{background:linear-gradient(135deg,#43e97b 0,#38f9d7 100%);color:#2c3e50}.team.alsatia{background:linear-gradient(135deg,#fa709a 0,#fee140 100%);color:#fff;font-size:1.05rem;box-shadow:0 4px 15px rgba(250,112,154,.3)}.vs{font-size:1.5rem;font-weight:700;color:var(--text-primary);margin:0 1rem}.match-details{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1rem;margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border-color)}.detail{text-align:center;padding:.5rem;background:var(--info-bg);border-radius:8px}.detail-label{font-size:.8rem;color:var(--text-secondary);margin-bottom:.25rem;text-transform:uppercase;letter-spacing:.5px}.detail-value{font-weight:700;color:var(--text-primary)}.match-actions{display:flex;gap:.5rem;margin-top:1.5rem;justify-content:center;flex-wrap:wrap}.action-btn{background:var(--text-primary);color:#fff;border:none;padding:.6rem 1.2rem;border-radius:20px;cursor:pointer;font-size:.9rem;font-weight:600;transition:all .3s ease}.action-btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}.notes{background:var(--warning-bg);border:1px solid var(--warning-border);border-radius:10px;padding:1.5rem;margin-top:2rem}.notes h3{color:var(--warning-text);margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}.notes p{color:var(--warning-text);margin-bottom:.5rem;font-size:.95rem}.footer{background:var(--footer-bg);color:#fff;text-align:center;padding:1.5rem;font-size:.9rem}.offline-indicator{position:fixed;top:20px;right:20px;background:#ff5722;color:#fff;padding:.5rem 1rem;border-radius:25px;font-size:.9rem;z-index:1000;transform:translateX(300px);transition:transform .3s ease}.offline-indicator.show{transform:translateX(0)}.team-status{font-size:.8rem;font-weight:600;display:flex;align-items:center;gap:.3rem;background-color:rgba(255,255,255,.2);padding:.2rem .6rem;border-radius:12px}@media (max-width:768px){body{padding:10px}.header{padding:1.5rem 1rem}.header-top{flex-direction:column;gap:1rem}.header-controls{flex-wrap:wrap;justify-content:center}.controls,.info-cards,.matches-section{padding:1rem}.filters{justify-content:center}.filter-btn{padding:.6rem 1.2rem;font-size:.8rem}.match-header{padding:1rem;font-size:.9rem}.team{min-width:150px;padding:.5rem 1rem;font-size:.9rem}.vs{font-size:1.2rem;margin:0 .5rem}}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
         .modal-backdrop{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.6);z-index:1040;opacity:0;transition:opacity .3s ease;pointer-events:none}.modal-backdrop.visible{opacity:1;pointer-events:auto}.modal{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(.95);width:90%;max-width:500px;max-height:90vh;background-color:var(--card-bg);border-radius:15px;box-shadow:var(--shadow-hover);z-index:1050;display:flex;flex-direction:column;opacity:0;transition:opacity .3s ease,transform .3s ease;pointer-events:none}.modal.visible{opacity:1;transform:translate(-50%,-50%) scale(1);pointer-events:auto}.modal-header{padding:1.25rem 1.5rem;color:var(--text-primary);text-align:center}.modal-header h3{margin:0;font-size:clamp(1.1rem, 4vw, 1.4rem);}.modal-header p{font-size:0.9rem;color:var(--text-secondary);margin-top:0.25rem}.modal-body{padding:0 1.5rem 1.5rem;overflow-y:auto;flex-grow:1}.modal-footer{padding:1rem 1.5rem;border-top:1px solid var(--border-color);display:flex;justify-content:flex-end;gap:1rem}.player-list{list-style:none;padding:0;margin:0}.player-list li{display:grid;grid-template-columns:1fr auto;align-items:center;padding:1rem 0;border-bottom:1px solid var(--border-color)}.player-list li:last-child{border-bottom:none}.player-name{font-weight:600;color:var(--text-primary);font-size:1.1rem}.player-actions{display:flex;gap:.5rem;align-items:center}.player-actions button{border:none;background-color:var(--info-bg);color:var(--text-secondary);cursor:pointer;width:36px;height:36px;font-size:1.2rem;border-radius:8px;transition:all .2s ease}.player-actions button:hover{transform:scale(1.1);background-color:#e0e0e0}[data-theme=dark] .player-actions button:hover{background-color:#444}.player-actions button.active{background-color:var(--text-primary);color:#fff;box-shadow:0 2px 5px rgba(0,0,0,.2)}.player-actions button[data-action="select-player"]{background-color:transparent;color:var(--text-primary);font-size:1.5rem}.modal-section-title{color:var(--text-primary);margin-top:1.5rem;margin-bottom:1rem;font-size:1.2rem;border-bottom:2px solid var(--text-primary);padding-bottom:.5rem}.selected-team-list{list-style:none;padding:0;margin:0;min-height:40px}.selected-team-list li{background-color:var(--info-bg);padding:.6rem 1rem;border-radius:8px;margin-bottom:.5rem;display:flex;justify-content:space-between;align-items:center;font-weight:500}.selected-team-list .placeholder{color:var(--text-secondary);font-style:italic;padding:.5rem 0}.team-composition-status{text-align:right;font-size:0.9rem;margin-top:.5rem;color:var(--text-secondary)}
         .selected-players-section{margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border-color)}.selected-players-section h4{color:var(--text-primary);font-size:.9rem;text-transform:uppercase;letter-spacing:.5px;margin-bottom:.75rem;text-align:center}.selected-players-list{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center}.selected-players-list li{background-color:var(--info-bg);color:var(--text-primary);padding:.4rem .8rem;border-radius:15px;font-size:.9rem;font-weight:500;border:1px solid var(--border-color)}
         .help-modal-body .help-section{margin-bottom:1.5rem}.help-modal-body h4{display:flex;align-items:center;gap:.5rem;color:var(--text-primary);margin-bottom:.5rem}.help-modal-body p{color:var(--text-secondary);font-size:.95rem;margin-bottom:.5rem}.help-modal-body ul{list-style-position:inside;padding-left:1rem;font-size:.95rem}.help-modal-body code{background-color:var(--info-bg);padding:.2rem .4rem;border-radius:4px;font-size:.9rem}
+
+        /* === NOUVEAUX STYLES AJOUTÉS POUR LE SCORE === */
+        .score-display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .score {
+            font-size: 2.2rem;
+            font-weight: 700;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            background-color: var(--info-bg);
+            border: 1px solid var(--border-color);
+        }
+        .match-card.finished {
+            border-left: 5px solid #95a5a6; /* Couleur grise pour les matchs terminés */
+        }
+        .match-card.finished .match-header {
+            background: linear-gradient(135deg, #636e72, #2d3436);
+        }
     </style>
 </head>
 <body data-theme="light">
@@ -60,11 +83,11 @@
         <footer class="footer"><p>🏓 AGP - Tennis de Table - Section du Bas-Rhin | Document imprimé le 21-08-2025</p><p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.8;">📱 Application Progressive Web App - Fonctionne hors ligne</p></footer>
     </div>
     
-    <!-- MODALE DE GESTION D'ÉQUIPE -->
+    <!-- MODALE DE GESTION D'ÉQUIPE (INCHANGÉE) -->
     <div class="modal-backdrop" id="compositionModalBackdrop"></div>
-    <div class="modal" id="compositionModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-header"><h3 id="modalTitle">Équipe pour le match</h3><p id="modalSubtitle"></p></div><div class="modal-body"><ul class="player-list" id="playerList"></ul><h4 class="modal-section-title">Équipe sélectionnée</h4><ul class="selected-team-list" id="selectedTeamList"></ul><div class="team-composition-status" id="teamCompositionStatus"></div></div><div class="modal-footer"><button type="button" class="action-btn" id="cancelCompositionBtn" style="background: var(--text-secondary);">Annuler</button><button type="button" class="action-btn" id="saveCompositionBtn">Sauvegarder</button></div></div>
+    <div class="modal" id="compositionModal" role="dialog" aria-modal="true" aria-labelledby="compositionModalTitle"><div class="modal-header"><h3 id="compositionModalTitle">Équipe pour le match</h3><p id="modalSubtitle"></p></div><div class="modal-body"><ul class="player-list" id="playerList"></ul><h4 class="modal-section-title">Équipe sélectionnée</h4><ul class="selected-team-list" id="selectedTeamList"></ul><div class="team-composition-status" id="teamCompositionStatus"></div></div><div class="modal-footer"><button type="button" class="action-btn" id="cancelCompositionBtn" style="background: var(--text-secondary);">Annuler</button><button type="button" class="action-btn" id="saveCompositionBtn">Sauvegarder</button></div></div>
 
-    <!-- MODALE D'AIDE -->
+    <!-- MODALE D'AIDE (INCHANGÉE) -->
     <div class="modal-backdrop" id="helpModalBackdrop"></div>
     <div class="modal" id="helpModal" role="dialog" aria-modal="true" aria-labelledby="helpModalTitle">
         <div class="modal-header"><h3 id="helpModalTitle">💡 Guide d'utilisation</h3></div>
@@ -73,25 +96,54 @@
         <div class="modal-footer"><button type="button" class="action-btn" id="closeHelpBtn">Compris !</button></div>
     </div>
 
+    <!-- === NOUVELLE MODALE POUR LES SCORES (AJOUTÉE) === -->
+    <div class="modal-backdrop" id="scoreModalBackdrop"></div>
+    <div class="modal" id="scoreModal" role="dialog" aria-modal="true" aria-labelledby="scoreModalTitle">
+        <div class="modal-header">
+            <h3 id="scoreModalTitle">Saisir le score</h3>
+            <p id="scoreModalSubtitle"></p>
+        </div>
+        <div class="modal-body">
+            <div class="match-teams" style="margin-bottom: 2rem;">
+                <div class="team home" id="scoreModalHomeTeam"></div>
+                <div class="vs">VS</div>
+                <div class="team away" id="scoreModalAwayTeam"></div>
+            </div>
+            <div style="display: flex; justify-content: space-around; align-items: center;">
+                <input type="number" id="scoreHomeInput" style="width: 80px; font-size: 2rem; text-align: center;">
+                <span style="font-size: 2rem;">-</span>
+                <input type="number" id="scoreAwayInput" style="width: 80px; font-size: 2rem; text-align: center;">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="action-btn" id="cancelScoreBtn" style="background: var(--text-secondary);">Annuler</button>
+            <button type="button" class="action-btn" id="saveScoreBtn">Sauvegarder Score</button>
+        </div>
+    </div>
+
+
     <script>
     (function() {
         'use strict';
         
-        // --- DATA (uniquement la liste des joueurs, les matchs viennent du serveur) ---
+        // --- DATA (inchangée) ---
         const TEAM_SIZE = 4;
         const playersData = [ { id: 1, name: 'Philippe' }, { id: 2, name: 'Jean-Pierre THEODIN' }, { id: 3, name: 'Bernard Wolf' }, { id: 4, name: 'Julien' }, { id: 5, name: 'Laurent Husser' }, { id: 6, name: 'Christine Pontida' }];
         const getDefaultComposition = () => ({ available: [], unavailable: [], noresponse: playersData.map(p => p.id), selected: [] });
         
-        // --- DOM ELEMENTS & STATE ---
+        // --- DOM ELEMENTS & STATE (ajout des éléments de la nouvelle modale) ---
         const matchesGrid = document.getElementById('matchesGrid'), searchInput = document.getElementById("searchInput"), filterButtons = document.querySelectorAll(".filter-btn"), resultsInfo = document.getElementById("resultsInfo"), noResults = document.getElementById("noResults");
-        const compositionModal = document.getElementById('compositionModal'), modalBackdrop = document.getElementById('compositionModalBackdrop'), modalTitle = document.getElementById('modalTitle'), modalSubtitle = document.getElementById('modalSubtitle'), playerList = document.getElementById('playerList'), selectedTeamList = document.getElementById('selectedTeamList'), teamCompositionStatus = document.getElementById('teamCompositionStatus'), saveCompositionBtn = document.getElementById('saveCompositionBtn'), cancelCompositionBtn = document.getElementById('cancelCompositionBtn');
+        const compositionModal = document.getElementById('compositionModal'), compositionModalBackdrop = document.getElementById('compositionModalBackdrop'), modalSubtitle = document.getElementById('modalSubtitle'), playerList = document.getElementById('playerList'), selectedTeamList = document.getElementById('selectedTeamList'), teamCompositionStatus = document.getElementById('teamCompositionStatus'), saveCompositionBtn = document.getElementById('saveCompositionBtn'), cancelCompositionBtn = document.getElementById('cancelCompositionBtn');
         const helpBtn = document.getElementById('helpBtn'), helpModal = document.getElementById('helpModal'), helpModalBackdrop = document.getElementById('helpModalBackdrop'), closeHelpBtn = document.getElementById('closeHelpBtn');
         const themeToggle = document.getElementById('themeToggle'), themeIcon = document.getElementById('themeIcon'), themeText = document.getElementById('themeText');
         const pwaStatus = document.getElementById('pwaStatus'), installBtn = document.getElementById('installBtn');
+        
+        // Nouveaux éléments pour la modale de score
+        const scoreModal = document.getElementById('scoreModal'), scoreModalBackdrop = document.getElementById('scoreModalBackdrop'), scoreModalSubtitle = document.getElementById('scoreModalSubtitle'), scoreModalHomeTeam = document.getElementById('scoreModalHomeTeam'), scoreModalAwayTeam = document.getElementById('scoreModalAwayTeam'), scoreHomeInput = document.getElementById('scoreHomeInput'), scoreAwayInput = document.getElementById('scoreAwayInput'), saveScoreBtn = document.getElementById('saveScoreBtn'), cancelScoreBtn = document.getElementById('cancelScoreBtn');
 
         let matchesData = [], currentFilter = 'all', currentSearch = '', currentEditingMatchId = null, tempComposition = null, deferredPrompt;
 
-        // --- DATA MANAGEMENT (MODIFIED FOR NETLIFY FUNCTIONS) ---
+        // --- DATA MANAGEMENT (mise à jour pour gérer le score) ---
         async function loadMatchesData() {
             try {
                 const response = await fetch('/.netlify/functions/getMatches');
@@ -105,21 +157,25 @@
                 return [];
             }
         }
-        async function saveComposition(matchId, composition) {
+        
+        // Cette fonction est maintenant plus générique pour mettre à jour n'importe quelle partie d'un match
+        async function updateMatchData(matchId, dataToUpdate) {
             try {
                 const response = await fetch('/.netlify/functions/updateMatch', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ matchId, composition }),
+                    body: JSON.stringify({ matchId, ...dataToUpdate }),
                 });
                 if (!response.ok) throw new Error('Failed to save');
+                return true;
             } catch (error) {
                 console.error("Erreur de sauvegarde:", error);
                 alert("Erreur: Impossible de sauvegarder. Vérifiez votre connexion internet.");
+                return false;
             }
         }
         
-        // --- RENDERING ---
+        // --- RENDERING (MODIFIÉ POUR AFFICHER LES SCORES) ---
         const renderMatches = (matches) => {
             matchesGrid.innerHTML = '';
             if (matches.length === 0) { resultsInfo.style.display = 'none'; noResults.style.display = 'block'; return; }
@@ -129,13 +185,63 @@
                 const card = document.createElement('div');
                 card.className = `match-card`;
                 card.dataset.matchId = match.id;
+
                 const selectedCount = (match.composition?.selected || []).length;
                 const teamStatusHTML = selectedCount > 0 ? `<div class="team-status">👥 ${selectedCount}/${TEAM_SIZE}</div>` : '';
-                let selectedPlayersHTML = '';
-                if (selectedCount > 0) { const playerNames = match.composition.selected.map(id => { const p = playersData.find(pl => pl.id === id); return p ? `<li>${p.name}</li>` : ''; }).join(''); selectedPlayersHTML = `<div class="selected-players-section"><h4>Équipe sélectionnée</h4><ul class="selected-players-list">${playerNames}</ul></div>`; }
                 const formattedDate = new Date(match.date).toLocaleDateString('fr-FR', { weekday: 'long', day: '2-digit', month: '2-digit', year: 'numeric' });
                 const shareText = `Journée ${match.journee}: ${match.homeTeam} vs ${match.awayTeam} - ${formattedDate.split(' ')[0]} ${match.date.split('-').reverse().join('/')} à ${match.time}`;
-                card.innerHTML = `<div class="match-header"><span>Journée ${match.journee}</span>${teamStatusHTML}</div><div class="match-body"><div class="match-teams"><div class="team ${match.venue==='home'?'alsatia':'home'}">${match.homeTeam}</div><div class="vs">VS</div><div class="team ${match.venue==='away'?'alsatia':'away'}">${match.awayTeam}</div></div><div class="match-details"><div class="detail"><div class="detail-label">Date</div><div class="detail-value">${formattedDate}</div></div><div class="detail"><div class="detail-label">Heure</div><div class="detail-value">${match.time}</div></div><div class="detail"><div class="detail-label">Lieu</div><div class="detail-value">${match.venue === 'home' ? 'Domicile' : 'Extérieur'}</div></div></div>${selectedPlayersHTML}<div class="match-actions"><button class="action-btn" data-action="compose">👥 Gérer l'équipe</button><button class="action-btn" data-action="calendar" data-datetime="${match.date}T${match.time.replace('h',':')}" data-title="${match.homeTeam} vs ${match.awayTeam}">📅 Ajouter</button><button class="action-btn" data-action="share" data-sharetext="${shareText}">📤 Partager</button></div></div>`;
+                
+                let matchBodyHTML = '';
+                let actionButtonsHTML = '';
+
+                // === NOUVELLE LOGIQUE D'AFFICHAGE SCORE vs DÉTAILS ===
+                if (match.status === 'terminé' && match.scoreHome != null) {
+                    card.classList.add('finished');
+                    matchBodyHTML = `
+                        <div class="match-teams">
+                            <div class="team ${match.venue==='home'?'alsatia':'home'}">${match.homeTeam}</div>
+                            <div class="score-display">
+                                <span class="score">${match.scoreHome}</span>
+                                <span>-</span>
+                                <span class="score">${match.scoreAway}</span>
+                            </div>
+                            <div class="team ${match.venue==='away'?'alsatia':'away'}">${match.awayTeam}</div>
+                        </div>
+                    `;
+                    actionButtonsHTML = `
+                        <button class="action-btn" data-action="edit-score">✍️ Modifier Score</button>
+                        <button class="action-btn" data-action="share" data-sharetext="${shareText}">📤 Partager</button>
+                    `;
+                } else {
+                    const selectedPlayersHTML = selectedCount > 0 ? `<div class="selected-players-section"><h4>Équipe sélectionnée</h4><ul class="selected-players-list">${match.composition.selected.map(id => `<li>${playersData.find(p=>p.id===id)?.name||''}</li>`).join('')}</ul></div>` : '';
+                    matchBodyHTML = `
+                        <div class="match-teams">
+                           <div class="team ${match.venue==='home'?'alsatia':'home'}">${match.homeTeam}</div>
+                           <div class="vs">VS</div>
+                           <div class="team ${match.venue==='away'?'alsatia':'away'}">${match.awayTeam}</div>
+                        </div>
+                        <div class="match-details">
+                           <div class="detail"><div class="detail-label">Date</div><div class="detail-value">${formattedDate}</div></div>
+                           <div class="detail"><div class="detail-label">Heure</div><div class="detail-value">${match.time}</div></div>
+                           <div class="detail"><div class="detail-label">Lieu</div><div class="detail-value">${match.venue === 'home' ? 'Domicile' : 'Extérieur'}</div></div>
+                        </div>
+                        ${selectedPlayersHTML}
+                    `;
+                    actionButtonsHTML = `
+                        <button class="action-btn" data-action="edit-score">✍️ Saisir Score</button>
+                        <button class="action-btn" data-action="compose">👥 Gérer l'équipe</button>
+                        <button class="action-btn" data-action="calendar" data-datetime="${match.date}T${match.time.replace('h',':')}" data-title="${match.homeTeam} vs ${match.awayTeam}">📅 Ajouter</button>
+                        <button class="action-btn" data-action="share" data-sharetext="${shareText}">📤 Partager</button>
+                    `;
+                }
+                
+                card.innerHTML = `
+                    <div class="match-header"><span>Journée ${match.journee}</span>${teamStatusHTML}</div>
+                    <div class="match-body">
+                        ${matchBodyHTML}
+                        <div class="match-actions">${actionButtonsHTML}</div>
+                    </div>
+                `;
                 fragment.appendChild(card);
             });
             matchesGrid.appendChild(fragment);
@@ -143,46 +249,101 @@
         };
         const applyFilters = () => { const filtered = matchesData.filter(m => { const selNames = (m.composition?.selected||[]).map(id => playersData.find(p=>p.id===id)?.name||'').join(' ').toLowerCase(); const searchOk = currentSearch===''||(m.homeTeam+m.awayTeam+m.date+selNames).toLowerCase().includes(currentSearch); const filterOk = currentFilter==='all'||m.venue===currentFilter||m.month===currentFilter; return searchOk&&filterOk; }); renderMatches(filtered); };
         
-        // --- MODAL LOGIC ---
+        // --- MODAL LOGIC (ajout de la logique pour la modale de score) ---
         const openModal = (modal, backdrop) => { backdrop.classList.add('visible'); modal.classList.add('visible'); };
         const closeModal = (modal, backdrop) => { backdrop.classList.remove('visible'); modal.classList.remove('visible'); };
+
         const openCompositionModal = (matchId) => {
             currentEditingMatchId = matchId;
             const match = matchesData.find(m => m.id === matchId);
             if (!match) return;
             tempComposition = JSON.parse(JSON.stringify(match.composition));
-            modalTitle.textContent = `Équipe pour le match`;
+            document.getElementById('compositionModalTitle').textContent = `Équipe pour le match`;
             modalSubtitle.textContent = `${match.homeTeam} vs ${match.awayTeam}`;
             renderCompositionModalContent();
-            openModal(compositionModal, modalBackdrop);
+            openModal(compositionModal, compositionModalBackdrop);
         };
+        
+        const openScoreModal = (matchId) => {
+            currentEditingMatchId = matchId;
+            const match = matchesData.find(m => m.id === matchId);
+            if (!match) return;
+            scoreModalSubtitle.textContent = `Journée ${match.journee} - ${new Date(match.date).toLocaleDateString('fr-FR')}`;
+            scoreModalHomeTeam.textContent = match.homeTeam;
+            scoreModalAwayTeam.textContent = match.awayTeam;
+            scoreHomeInput.value = match.scoreHome ?? '';
+            scoreAwayInput.value = match.scoreAway ?? '';
+            openModal(scoreModal, scoreModalBackdrop);
+        };
+        
         const renderCompositionModalContent = () => { playerList.innerHTML = ''; playersData.forEach(p => { const li = document.createElement('li'); let s = 'noresponse'; if (tempComposition.available.includes(p.id)) s = 'available'; if (tempComposition.unavailable.includes(p.id)) s = 'unavailable'; const isSel = tempComposition.selected.includes(p.id); const canBeSel = s === 'available' && !isSel && tempComposition.selected.length < TEAM_SIZE; li.innerHTML = `<span class="player-name">${p.name}</span><span class="player-actions"><button style="visibility:${canBeSel?'visible':'hidden'}" title="Sélectionner" data-action="select-player" data-player-id="${p.id}">➕</button><button class="status-btn ${s==='available'?'active':''}" title="Disponible" data-action="set-status" data-status="available" data-player-id="${p.id}">✔️</button><button class="status-btn ${s==='unavailable'?'active':''}" title="Indisponible" data-action="set-status" data-status="unavailable" data-player-id="${p.id}">❌</button><button class="status-btn ${s==='noresponse'?'active':''}" title="Pas de réponse" data-action="set-status" data-status="noresponse" data-player-id="${p.id}">❔</button></span>`; playerList.appendChild(li); }); selectedTeamList.innerHTML = ''; if (tempComposition.selected.length > 0) { tempComposition.selected.forEach(id => { const p = playersData.find(pl => pl.id === id); if(p) { const li = document.createElement('li'); li.innerHTML = `<span>${p.name}</span> <button class="player-actions" style="background:transparent" title="Retirer" data-action="deselect-player" data-player-id="${p.id}">➖</button>`; selectedTeamList.appendChild(li); }}); } else { selectedTeamList.innerHTML = `<li class="placeholder">Aucun joueur sélectionné</li>`; } teamCompositionStatus.textContent = `${tempComposition.selected.length} / ${TEAM_SIZE} joueurs`; };
         const handleCompositionAction = (e) => { const t = e.target.closest('button'); if (!t) return; const action = t.dataset.action; const pId = parseInt(t.dataset.playerId, 10); if (action === 'set-status') { ['available','unavailable','noresponse'].forEach(k => {tempComposition[k]=tempComposition[k].filter(id=>id!==pId)}); tempComposition[t.dataset.status].push(pId); if(t.dataset.status!=='available'){tempComposition.selected=tempComposition.selected.filter(id=>id!==pId)}; } else if (action === 'select-player' && tempComposition.selected.length < TEAM_SIZE) { tempComposition.selected.push(pId); } else if (action === 'deselect-player') { tempComposition.selected = tempComposition.selected.filter(id => id !== pId); } renderCompositionModalContent(); };
         
-        // --- UTILITY & THEME ---
+        // --- UTILITY & THEME (inchangées) ---
         const addToCalendar = (dt, title) => { const s = new Date(dt), e = new Date(s.getTime()+72e5); const f = d => d.toISOString().replace(/[-:]/g,'').split('.')[0]; window.open(`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${f(s)}Z/${f(e)}Z`, '_blank'); };
         const shareMatch = async (text) => { const data = { title: 'ALSATIA TT - Match', text, url: window.location.href.split('?')[0] }; try { if (navigator.share) await navigator.share(data); else { await navigator.clipboard.writeText(text+' - '+data.url); alert('Informations copiées !');}} catch (err) { console.error("Share failed:", err); } };
         const updateThemeButton = (theme) => { themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙'; themeText.textContent = theme === 'dark' ? 'Mode clair' : 'Mode sombre'; };
 
-        // --- PWA LOGIC ---
+        // --- PWA LOGIC (inchangée) ---
         window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); deferredPrompt = e; installBtn.classList.remove('hidden'); });
         installBtn.addEventListener('click', async () => { if (deferredPrompt) { deferredPrompt.prompt(); const { outcome } = await deferredPrompt.userChoice; if (outcome === 'accepted') { pwaStatus.classList.remove('hidden'); setTimeout(() => pwaStatus.classList.add('hidden'), 5000); } deferredPrompt = null; installBtn.classList.add('hidden'); } });
         window.addEventListener('appinstalled', () => { pwaStatus.classList.remove('hidden'); installBtn.classList.add('hidden'); });
 
-        // --- EVENT LISTENERS ---
-        matchesGrid.addEventListener('click', (e) => { const t = e.target.closest('.action-btn'); if (!t) return; const mId = t.closest('.match-card').dataset.matchId, action = t.dataset.action; if (action === 'compose') openCompositionModal(mId); else if (action === 'calendar') addToCalendar(t.dataset.datetime, t.dataset.title); else if (action === 'share') shareMatch(t.dataset.sharetext); });
+        // --- EVENT LISTENERS (mis à jour pour gérer le score) ---
+        matchesGrid.addEventListener('click', (e) => {
+            const button = e.target.closest('.action-btn');
+            if (!button) return;
+            const matchId = button.closest('.match-card').dataset.matchId;
+            const action = button.dataset.action;
+            if (action === 'compose') openCompositionModal(matchId);
+            else if (action === 'edit-score') openScoreModal(matchId); // Action pour la nouvelle modale
+            else if (action === 'calendar') addToCalendar(button.dataset.datetime, button.dataset.title);
+            else if (action === 'share') shareMatch(button.dataset.sharetext);
+        });
+        
         compositionModal.addEventListener('click', handleCompositionAction);
-        cancelCompositionBtn.addEventListener('click', () => closeModal(compositionModal, modalBackdrop));
-        saveCompositionBtn.addEventListener('click', async () => { const idx = matchesData.findIndex(m=>m.id===currentEditingMatchId); if (idx!==-1) { matchesData[idx].composition=tempComposition; await saveComposition(currentEditingMatchId, tempComposition); applyFilters(); } closeModal(compositionModal, modalBackdrop); });
+        cancelCompositionBtn.addEventListener('click', () => closeModal(compositionModal, compositionModalBackdrop));
+        saveCompositionBtn.addEventListener('click', async () => { 
+            const success = await updateMatchData(currentEditingMatchId, { composition: tempComposition });
+            if (success) {
+                const idx = matchesData.findIndex(m=>m.id===currentEditingMatchId);
+                if (idx!==-1) matchesData[idx].composition=tempComposition;
+                applyFilters();
+            }
+            closeModal(compositionModal, compositionModalBackdrop); 
+        });
+        
+        // Nouveaux écouteurs pour la modale de score
+        saveScoreBtn.addEventListener('click', async () => {
+            const scoreHome = parseInt(scoreHomeInput.value);
+            const scoreAway = parseInt(scoreAwayInput.value);
+            if (isNaN(scoreHome) || isNaN(scoreAway)) return alert('Veuillez entrer des scores valides.');
+            const success = await updateMatchData(currentEditingMatchId, { scoreHome, scoreAway });
+            if (success) {
+                // Mettre à jour les données locales pour un affichage instantané
+                const idx = matchesData.findIndex(m=>m.id===currentEditingMatchId);
+                if(idx !== -1) {
+                    matchesData[idx].scoreHome = scoreHome;
+                    matchesData[idx].scoreAway = scoreAway;
+                    matchesData[idx].status = 'terminé';
+                }
+                applyFilters();
+            }
+            closeModal(scoreModal, scoreModalBackdrop);
+        });
+        cancelScoreBtn.addEventListener('click', () => closeModal(scoreModal, scoreModalBackdrop));
+        
         helpBtn.addEventListener('click', () => openModal(helpModal, helpModalBackdrop));
         closeHelpBtn.addEventListener('click', () => closeModal(helpModal, helpModalBackdrop));
-        modalBackdrop.addEventListener('click', () => closeModal(compositionModal, modalBackdrop));
+        compositionModalBackdrop.addEventListener('click', () => closeModal(compositionModal, compositionModalBackdrop));
         helpModalBackdrop.addEventListener('click', () => closeModal(helpModal, helpModalBackdrop));
+        scoreModalBackdrop.addEventListener('click', () => closeModal(scoreModal, scoreModalBackdrop));
+        
         searchInput.addEventListener('input', e => { currentSearch=e.target.value.toLowerCase(); applyFilters(); });
         filterButtons.forEach(b => { b.addEventListener('click', () => { filterButtons.forEach(btn=>btn.classList.remove('active')); b.classList.add('active'); currentFilter=b.dataset.filter; applyFilters(); }); });
         themeToggle.addEventListener('click', () => { const newTheme = document.body.dataset.theme === 'light' ? 'dark' : 'light'; document.body.dataset.theme = newTheme; try { localStorage.setItem('theme', newTheme); } catch(e){} updateThemeButton(newTheme); });
         
-        // --- INITIALIZATION ---
+        // --- INITIALIZATION (inchangée) ---
         document.addEventListener('DOMContentLoaded', async () => {
             let savedTheme = 'light';
             try { savedTheme = localStorage.getItem('theme') || 'light'; } catch(e){}
