@@ -1,0 +1,7 @@
+{
+  "name": "calendrier-pwa-backend",
+  "version": "1.0.0",
+  "dependencies": {
+    "firebase-admin": "^13.5.0"
+  }
+}
